@@ -88,6 +88,6 @@ The system learns user preferences from historical ratings and movie metadata (g
    - Incorporate Deep Learning Models as well as A/B Testing at Scale  
 
 ## NOTE
-   While Netflix’s real system is more advanced, conceptually, it blends collaborative and content-based signals — just like my LightFM hybrid recommender does.
+   While Netflix’s real system is more advanced, conceptually, it blends collaborative and content-based signals — just like how i implemented my hybrid recommender using LightFM.
 
    So my project mimics the same AI foundation, albeit on a smaller scale.
