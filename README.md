@@ -1,7 +1,6 @@
-# 🎬 AI-Powered Hybrid Movie Recommendation Engine
+# AI-Powered Hybrid Movie Recommendation Engine
 
-Built with Django and LightFM, combining Collaborative Filtering (CF) and Content-Based Filtering (CBF) to deliver personalized movie suggestions.
-
+A Django-based AI system that generates personalized movie suggestions using a hybrid approach — combining Collaborative Filtering (CF) and Content-Based Filtering (CBF) via the LightFM library.
 The system learns user preferences from historical ratings and movie metadata (genres), using matrix factorization and feature embeddings to generate recommendations similar to Netflix’s personalization approach.
 
 ---
@@ -88,6 +87,6 @@ The system learns user preferences from historical ratings and movie metadata (g
    - Incorporate Deep Learning Models as well as A/B Testing at Scale  
 
 ## NOTE
-   Netflix’s real system is more advanced, but conceptually, it blends collaborative and content-based signals — just like my LightFM hybrid recommender does.
-   
+   While Netflix’s real system is more advanced, conceptually, it blends collaborative and content-based signals — just like my LightFM hybrid recommender does.
+
    So my project mimics the same AI foundation, albeit on a smaller scale.
