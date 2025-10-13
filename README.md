@@ -1,4 +1,4 @@
-🎬 Simple AI-powered Movie Recommendation System (Django + LightFM)
+# 🎬 Simple AI-powered Movie Recommendation System (Django + LightFM)
 
 An AI-powered movie recommendation system built with Django and LightFM, combining Collaborative Filtering (CF) and Content-Based Filtering (CBF) to deliver personalized movie suggestions.
 
