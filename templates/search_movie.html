@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Recommendation System</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    input { width: 300px; padding: 8px; font-size: 1em; }
+    #recommendations { margin-top: 2em; }
+    ul { list-style-type: none; padding: 0; }
+    li { background: #f5f5f5; margin: 6px 0; padding: 8px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <section>
+    <input type="search" id="search_movie" placeholder="Type in genre or movie name..." />
+  </section>
+
+  <section id="recommendations">
+    <h3 id="heading"></h3>
+    <ul id="list-recommendations"></ul>
+  </section>
+
+  <script>
+    const input = document.getElementById("search_movie");
+    const heading = document.getElementById("heading");
+    const list = document.getElementById("list-recommendations");
+
+    input.addEventListener("input", async (e) => {
+      const query = e.target.value.trim();
+      if (query.length < 3) return; // wait until user types enough
+
+      const res = await fetch(`?q=${encodeURIComponent(query)}`);
+      const data = await res.json();
+
+      list.innerHTML = ""; // clear old results
+
+      if (data.results && data.results.length) {
+        heading.textContent = `Top Recommendations for "${query}"`;
+        data.results.forEach(movie => {
+          const li = document.createElement("li");
+          li.textContent = `${movie.title} — ${movie.genres}`;
+          list.appendChild(li);
+        });
+      } else {
+        heading.textContent = `No results found for "${query}"`;
+      }
+    });
+  </script>
+</body>
+</html>
