@@ -82,11 +82,12 @@ The system learns user preferences from historical ratings and movie metadata (g
    - **ratings.csv** — User–movie rating interactions  
    - **tags.csv** — User-generated tags
 
-## FUTURE ENHANCEMENT
+## FUTURE ENHANCEMENTS
    - Incorporate Contextual Recommendations
    - Incorporate more advanced user behaviours tracking such as clicks,scroll behaviour,likes/dislikes,pauses/skips,e.t.c.
    - Incorporate Deep Learning Models as well as A/B Testing at Scale  
 
 ## NOTE
-   Netflix’s real system is more advanced, but conceptually, it blends collaborative and content-based signals — just like my LightFM hybrid recommender does. 
+   Netflix’s real system is more advanced, but conceptually, it blends collaborative and content-based signals — just like my LightFM hybrid recommender does.
+   
    So my project mimics the same AI foundation, albeit on a smaller scale.
