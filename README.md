@@ -56,7 +56,7 @@ The system learns user preferences from historical ratings and movie metadata (g
 5. **Access the app** 
    Open your browser and go to :
    ```bash
-   👉 http://127.0.0.1:8000/MovieRecommender/
+   http://127.0.0.1:8000/MovieRecommender/
    ```
    Type a movie name or genre in the search box to get your **Top-N recommendations**
 
